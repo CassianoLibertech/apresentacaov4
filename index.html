@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassiano Mendes - Foco em Resultados para V4 Company</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- VTurb Preload Optimization -->
+    <link rel="preload" href="https://scripts.converteai.net/639e5d33-1b43-4be6-b1f9-541867980a83/players/684b22aafba2242d20633365/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload" href="https://images.converteai.net/639e5d33-1b43-4be6-b1f9-541867980a83/players/684b22aafba2242d20633365/thumbnail.jpg" as="image">
+    <link rel="preload" href="https://cdn.converteai.net/639e5d33-1b43-4be6-b1f9-541867980a83/684b224fdcccefdfaf103ee4/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/FF0000/FFFFFF?text=CM" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .v4-red { color: #FF0000; }
+        .bg-v4-red { background-color: #FF0000; }
+        .border-v4-red { border-color: #FF0000; }
+        .solid-card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            transition: transform 0.3s ease;
+        }
+        .solid-card:hover { transform: translateY(-5px); }
+        html { scroll-behavior: smooth; }
+        .fade-in { animation: fadeInAnimation 1s ease-in forwards; opacity: 0; }
+        @keyframes fadeInAnimation {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+        .video-container iframe, .video-container div[id^="vid_"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold tracking-tighter">CASSIANO MENDES</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-v4-red transition-colors duration-300">Sobre</a>
+                <a href="#what-i-seek" class="hover:text-v4-red transition-colors duration-300">O que busco</a>
+                <a href="#why-v4" class="hover:text-v4-red transition-colors duration-300">Habilidades</a>
+                <a href="#projects" class="hover:text-v4-red transition-colors duration-300">Projetos</a>
+                <a href="#contact" class="hover:text-v4-red transition-colors duration-300">Contato</a>
+            </nav>
+            <a href="https://wa.me/5511985453508" target="_blank" class="bg-v4-red text-white font-semibold px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-300">
+                Vamos Conversar
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    
+                    <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight mb-4 fade-in">
+                        Cassiano Mendes
+                    </h2>
+                    <p class="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto mt-4 mb-8 fade-in" style="animation-delay: 0.2s;">
+                        Conectando <strong class="text-white">processos, pessoas e tecnologia</strong> para impulsionar o crescimento e entregar resultados de alto impacto na <strong class="v4-red">V4 Company</strong>.
+                    </p>
+                    <div class="flex justify-center space-x-4 fade-in" style="animation-delay: 0.4s;">
+                        <a href="#projects" class="bg-white text-black font-semibold px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-300">
+                            Ver Projetos
+                        </a>
+                        <a href="https://www.linkedin.com/in/cassiano-mendes-6214b4357" target="_blank" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-black transition-colors duration-300">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Olá, eu sou <span class="v4-red">Cassiano Mendes</span></h3>
+                    <p class="text-gray-300 md:text-lg leading-relaxed mb-8">
+                        Aos 20 anos e baseado em São Paulo, sou movido pela curiosidade e pelo prazer de estudar por horas todos os dias. Meu foco é transformar estratégias em planos de ação, otimizar operações e resolver problemas. Com um perfil comportamental que equilibra criatividade, análise e comunicação, minha paixão é trabalhar com pessoas para criar projetos que gerem valor real ao negócio.
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                         <div class="inline-block bg-gray-900/50 border border-gray-700 rounded-lg py-3 px-5">
+                            <p class="text-white">
+                                <strong>Modelo de Trabalho:</strong> Flexível (com preferência pelo presencial)
+                            </p>
+                        </div>
+                         <div class="inline-block bg-gray-900/50 border border-gray-700 rounded-lg py-3 px-5">
+                            <p class="text-white">
+                                <strong>Inglês:</strong> Avançado com comunicação fluida
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- What I'm Looking For Section -->
+        <section id="what-i-seek" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">O que eu busco na <span class="v4-red">V4 Company</span></h3>
+                    <p class="text-gray-400 mt-2 max-w-3xl mx-auto">Procuro um ambiente que desafie meus limites e me permita construir uma carreira de alto impacto.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Busca por Sofisticação e Processo</h4>
+                        <p class="text-gray-300">Reconheço que minha entrega atual, apesar de eficaz, ainda tem um caráter amador. Busco a V4 para me inserir em um ecossistema com processos validados e mentoria de alto nível, com o objetivo de sofisticar radicalmente minha execução e profissionalismo.</p>
+                    </div>
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Pressão por Performance</h4>
+                        <p class="text-gray-300">Quero uma empresa que me pressione a entregar muito mais do que normalmente entrego, na metade do tempo. Acredito que o crescimento exponencial vem de desafios intensos.</p>
+                    </div>
+                    <div class="p-8 solid-card rounded-xl">
+                         <h4 class="text-2xl font-bold mb-2 v4-red">Ambiente Competitivo</h4>
+                        <p class="text-gray-300">Busco um ambiente competitivo que me ajude a afiar minha mentalidade para atingir novos patamares. A competição saudável é o que impulsiona a excelência.</p>
+                    </div>
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Especialização a Longo Prazo</h4>
+                        <p class="text-gray-300">Meu objetivo é me especializar na gestão de projetos complexos para, no futuro, trabalhar diretamente com grandes investidores. Busco a V4 como o lugar para construir essa base sólida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Pitch Section -->
+        <section id="video-pitch" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Uma Mensagem Para a <span class="v4-red">V4 Company</span></h3>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Quem é o Cassiano de verdade?</p>
+                </div>
+                <div class="max-w-4xl mx-auto solid-card rounded-lg overflow-hidden shadow-2xl">
+                    <div class="video-container">
+                        <div id="vid_684b22aafba2242d20633365" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_684b22aafba2242d20633365" src="https://images.converteai.net/639e5d33-1b43-4be6-b1f9-541867980a83/players/684b22aafba2242d20633365/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_684b22aafba2242d20633365" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_684b22aafba2242d20633365"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/639e5d33-1b43-4be6-b1f9-541867980a83/players/684b22aafba2242d20633365/player.js", s.async=!0,document.head.appendChild(s); </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why V4 Company Section -->
+        <section id="why-v4" class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Por que a <span class="v4-red">V4</span> deveria me contratar?</h3>
+                    <p class="text-gray-400 mt-2 max-w-3xl mx-auto">Minhas habilidades e motivações estão alinhadas com a cultura de alta performance que define a V4.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Comunicação e Speech de Alto Impacto</h4>
+                        <p class="text-gray-300">Possuo uma comunicação clara e didática, com facilidade para me conectar com qualquer tipo de público. A maioria dos contratos que fechei até hoje foram resultado direto da minha habilidade de construir relacionamentos através da fala.</p>
+                    </div>
+                     <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Low Maintenance, High Performance</h4>
+                        <p class="text-gray-300">Tenho clareza sobre meus objetivos e gosto de autonomia para alcançá-los. Assumo responsabilidade pelas minhas entregas, cumprindo prazos rigorosamente, sem a necessidade de microgerenciamento.</p>
+                    </div>
+                     <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Long-Term Commitment</h4>
+                        <p class="text-gray-300">Busco mais do que um projeto; quero uma parceria de longo prazo. Meu objetivo é crescer junto com uma empresa, agregando valor de forma consistente por anos e construindo um legado de resultados.</p>
+                    </div>
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">AI & Tech Leverage</h4>
+                        <p class="text-gray-300">Aplico ativamente IA e as mais recentes tecnologias para otimizar fluxos de trabalho e maximizar a produtividade diária, garantindo eficiência e inovação constantes.</p>
+                    </div>
+                    <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Fast Learning & Pattern Recognition</h4>
+                        <p class="text-gray-300">Absorvo e aplico novas tecnologias com velocidade e identifico rapidamente tendências em dados complexos. Essa combinação me permite tomar decisões ágeis e manter os projetos na vanguarda.</p>
+                    </div>
+                     <div class="p-8 solid-card rounded-xl">
+                        <h4 class="text-2xl font-bold mb-2 v4-red">Challenge-Driven & Applied Creativity</h4>
+                        <p class="text-gray-300">Problemas complexos são meu combustível. Vou além do convencional para desenvolver soluções criativas e eficazes, transformando obstáculos em oportunidades de crescimento e performance para o cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Projetos de Destaque</h3>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Resultados mensuráveis que demonstram minha capacidade de entrega.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8">
+                     <!-- Project 1 -->
+                    <div class="solid-card rounded-xl overflow-hidden group">
+                        <div class="p-8">
+                           <h4 class="text-2xl font-bold mb-2">Gestão de Projeto para Influenciador Digital</h4>
+                           <p class="text-gray-300 mb-4">Gerencio o projeto de um influenciador com 90k seguidores no Instagram e 100k no TikTok, no nicho de TDAH. Sou responsável por criar estratégias de funil de vendas, jornada do cliente e novos produtos.</p>
+                           <div class="flex flex-wrap gap-2 mb-4">
+                              <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Influencer Marketing</span>
+                              <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Gestão de Projetos</span>
+                              <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Nicho (TDAH)</span>
+                              <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Criação de Produto</span>
+                           </div>
+                           <p class="font-semibold v4-red">Status: <span class="text-white">Contrato ativo e em andamento.</span></p>
+                       </div>
+                   </div>
+                    <!-- Project 2 -->
+                    <div class="solid-card rounded-xl overflow-hidden group">
+                         <div class="p-8">
+                            <h4 class="text-2xl font-bold mb-2">P&D Interno para Rede de Academias</h4>
+                            <p class="text-gray-300 mb-4">Utilizei ferramentas simples para centralizar a comunicação de uma rede de academias low-cost em Guarulhos. Implantei também um sistema de pesquisa de satisfação anônima para os times de vendas.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Otimização de Processos</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Comunicação Interna</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Pesquisa de Satisfação</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Team Building</span>
+                            </div>
+                            <p class="font-semibold v4-red">Resultado: <span class="text-white">Criação de um canal de comunicação centralizado e de um sistema de feedback contínuo para a equipe.</span></p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="solid-card rounded-xl overflow-hidden group">
+                         <div class="p-8">
+                            <h4 class="text-2xl font-bold mb-2">Operação Própria de R$20.000 com Infoprodutos</h4>
+                            <p class="text-gray-300 mb-4">Gerenciei o ciclo de vida completo de um infoproduto próprio, incluindo criação de produto, ofertas, funil de vendas, jornada do cliente, tráfego, precificação e pós-venda.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Infoprodutos</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Marketing Digital</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Funil de Vendas</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Gestão de Projetos</span>
+                            </div>
+                            <p class="font-semibold v4-red">Resultado: <span class="text-white">Alcancei faturamento de R$20.000 com uma operação totalmente autônoma.</span></p>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="solid-card rounded-xl overflow-hidden group">
+                         <div class="p-8">
+                            <h4 class="text-2xl font-bold mb-2">Estratégia de Vendas para Empresa B2B</h4>
+                            <p class="text-gray-300 mb-4">Desenvolvi e operei uma nova estratégia para o canal de vendas por indicação em uma empresa B2B, resultando em um contrato com o Santander.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Vendas B2B</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Santander</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Cliente Enterprise</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Crescimento de Canal</span>
+                            </div>
+                            <p class="font-semibold v4-red">Resultado: <span class="text-white">Gerei R$12.000 em novos contratos em 2 meses.</span></p>
+                        </div>
+                    </div>
+                     <!-- Project 5 -->
+                    <div class="solid-card rounded-xl overflow-hidden group">
+                         <div class="p-8">
+                            <h4 class="text-2xl font-bold mb-2">Liderança na Criação de Área B2B</h4>
+                            <p class="text-gray-300 mb-4">Lidero a criação e estruturação da nova área B2B de uma empresa de software focada no setor de bares e restaurantes. Atuo com uma equipe de elite com histórico internacional. Detalhes sob sigilo por motivos contratuais.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Liderança Estratégica</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Criação de Área</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Software B2B</span>
+                               <span class="bg-gray-700 text-gray-200 text-xs font-semibold px-3 py-1 rounded-full">Food Service</span>
+                            </div>
+                            <p class="font-semibold v4-red">Status: <span class="text-white">Projeto ativo e em fase de desenvolvimento.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                 <div class="max-w-3xl mx-auto">
+                    <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Vamos Construir o Futuro Juntos</h3>
+                    <p class="text-gray-300 mt-4 mb-8 text-lg">Estou à disposição para uma conversa sobre como minhas habilidades podem fortalecer a equipe da V4 Company e impulsionar os resultados dos seus clientes.</p>
+                    <a href="https://wa.me/5511985453508" target="_blank" class="inline-block bg-v4-red text-white font-bold text-lg px-10 py-4 rounded-lg hover:bg-red-700 transition-colors duration-300">
+                        Entre em Contato
+                    </a>
+                    <div class="mt-12 flex flex-wrap justify-center items-center gap-x-6 gap-y-4">
+                        <a href="mailto:cassianomendes946@icloud.com" class="text-gray-400 hover:text-v4-red transition-colors flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>cassianomendes946@icloud.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cassiano-mendes-6214b4357" target="_blank" class="text-gray-400 hover:text-v4-red transition-colors flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                           <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/cassiano.b2b?igsh=bno4cnNueGRybGNx&utm_source=qr" target="_blank" class="text-gray-400 hover:text-v4-red transition-colors flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 - Cassiano Mendes. Desenvolvido com o objetivo de colaborar com a V4 Company.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
